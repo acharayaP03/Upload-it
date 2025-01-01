@@ -1,8 +1,9 @@
-import { View, Text, ScrollView, Image, StatusBar } from 'react-native';
+import { View, Text, ScrollView, Image } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '@/constants';
-import CustomButton from '@/components/customButton';
+import CustomButton from '@/components/CustomButton';
 
 export default function App() {
 	return (
@@ -34,7 +35,7 @@ export default function App() {
 						containerStyles='w-full mt-7'
 					/>
 				</View>
-				<StatusBar backgroundColor='#161622' barStyle='light-content' />
+				<StatusBar backgroundColor='#161622' style='light' />
 			</ScrollView>
 		</SafeAreaView>
 	);
