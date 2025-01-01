@@ -9,13 +9,13 @@ interface CustomButtonProps {
 	isLoading?: boolean;
 }
 
-export default function customButton({
+const CustomButton: React.FC<CustomButtonProps> = ({
 	title,
 	handlePress,
 	containerStyles,
 	textStyles,
-	isLoading,
-}: CustomButtonProps) {
+	isLoading = false,
+}) => {
 	return (
 		<TouchableOpacity
 			onPress={handlePress}
@@ -28,4 +28,6 @@ export default function customButton({
 			<Text className={`text-primary font-psemibold text-lg ${textStyles}`}>{title}</Text>
 		</TouchableOpacity>
 	);
-}
+};
+
+export default CustomButton;
