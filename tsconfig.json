@@ -13,6 +13,7 @@
 		"expo-env.d.ts",
 		"nativewind-env.d.ts",
 		"./assets/**/*",
-		"./images.d.ts"
+		"./images.d.ts",
+		"./components/**/*"
 	]
 }
